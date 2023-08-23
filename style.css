@@ -1,7 +1,48 @@
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #549ba0 #0076a8;
+}
+
+*::-webkit-scrollbar {
+  width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0076a8;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #549ba0;
+  border-radius: 30px;
+  border: 1px solid #000000;
+}
+
+body,
+html {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-container {
+  height: 100%;
+  overflow-y: scroll;
+  margin: auto;
+}
+
 .card {
-  margin: 20px;
-  border: 2px black solid;
-  border-radius: 10px;
-  padding: 20px;
-  width: 30%;
+  width: 80%;
+  margin: auto;
+  background-size: contain;
+  background-position: center;
+  transition: transform 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
