@@ -25,20 +25,30 @@ html {
   overflow: hidden;
 }
 
+h1 {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+}
+
 .card-container {
   height: 100%;
   overflow-y: scroll;
   margin: auto;
+  text-align: center;
 }
 
 .card {
-  width: 80%;
-  margin: auto;
+  margin: 0 auto;
   background-size: contain;
   background-position: center;
   transition: transform 0.5s;
   opacity: 0;
   visibility: hidden;
+  width: 80%;
+}
+
+img {
+  width: 80%;
 }
 
 .show {

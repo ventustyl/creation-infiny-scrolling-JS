@@ -35,7 +35,7 @@ function loadNewCards() {
     const card = document.createElement("div");
     card.classList.add("card");
     const randomImageNumber = getRandomImageNumber();
-    const imageUrl = `https://lelabderic.fr/projet/projet_15/img/Game-fantasy%20(${randomImageNumber}).webp`;
+    const imageUrl = `https://lelabderic.fr/projet/projet_15/img/img%20(${randomImageNumber}).webp`;
 
     const imageElement = document.createElement("img");
     imageElement.src = imageUrl;
@@ -49,7 +49,7 @@ function loadNewCards() {
 
 function getRandomImageNumber() {
   const minImageNumber = 1;
-  const maxImageNumber = 2145;
+  const maxImageNumber = 567;
   return (
     Math.floor(Math.random() * (maxImageNumber - minImageNumber + 1)) +
     minImageNumber
